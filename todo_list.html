@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="container border border-primary object-fit-lg-contain mx-auto p-2">
+        <h3 class="mt2 text-info bg-black">To-Do List</h3>
+        <div class="d-flex mt-2 ">
+            <input type="text" placeholder="Enter Task" id="taskname">&nbsp;
+            <button class=" btn btn-outline-success" onclick="displayTask()">Add</button>
+        </div>
+
+        <div class="d-flex mt-2  ">
+            <input type="number" placeholder="Enter ID" id="taskid">&nbsp;
+            <button class="btn btn-outline-danger">Delete</button>
+        </div>
+
+        <div class="d-flex mt-2 mb-2 ">
+            <input type="number" placeholder="Enter ID" id="completetask">&nbsp;
+            <button class="btn btn-outline-warning">Completed</button>
+        </div>
+    </div>
+</body>
+<script>
+
+    var arr=[];
+    var cnt = 1; 
+
+    function displayTask(){
+
+        var taskname = document.getElementById("taskname").value;
+        arr.push({id: cnt, taskname:task, status :true});
+        cnt++;
+
+    }
+
+    function display(){
+        
+
+    }
+
+
+</script>
+
+</html>
